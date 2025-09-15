@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Simple Registration Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 20px;
+  }
+  .form-container {
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #555;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .gender-container {
+    margin-bottom: 15px;
+  }
+  .gender-container label {
+    font-weight: normal;
+    margin-right: 10px;
+    color: #555;
+  }
+  .checkbox-label {
+    font-weight: normal;
+    color: #555;
+  }
+  .checkbox-container {
+    margin-bottom: 15px;
+  }
+  button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Registration Form</h2>
+  <form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" placeholder="Your first name" required />
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" placeholder="Your last name" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email" required />
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Create password" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+
+    <label>Gender</label>
+    <div class="gender-container">
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other" />
+      <label for="other">Other</label>
+    </div>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" name="dob" required />
+
+    <label for="country">Country</label>
+    <select id="country" name="country" required>
+      <option value="" disabled selected>Select your country</option>
+      <option>United States</option>
+      <option>United Kingdom</option>
+      <option>Canada</option>
+      <option>Australia</option>
+      <option>India</option>
+    </select>
+
+    <label for="payment">Payment Method</label>
+    <select id="payment" name="payment" required>
+      <option value="" disabled selected>Select payment method</option>
+      <option>Credit Card</option>
+      <option>Debit Card</option>
+      <option>PayPal</option>
+      <option>Net Banking</option>
+      <option>Cash on Delivery</option>
+    </select>
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="terms" name="terms" required />
+      <label for="terms" class="checkbox-label">I agree to the Terms and Conditions</label>
+    </div>
+
+    <button type="submit">Register</button>
+  </form>
+</div>
+
+</body>
+</html>
