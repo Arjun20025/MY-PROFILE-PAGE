@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+  <title>Bookmark</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      text-align: center;
+      padding-top: 20px;
+    }
+    header img {
+      width: 700px;
+      height: 300px;
+      max-width: 100%;
+      height: auto;
+    }
+    #space {
+      height: 200px;
+    }
+    ol {
+      width: 60%;
+      margin: auto;
+      padding-left: 0;
+      text-align: center;
+    }
+    ol li {
+      list-style: none;
+      display: inline-block;
+      padding: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    ol li:hover {
+      background: yellow;
+    }
+    /* Sliding menu bar on left side */
+    #menuBar {
+      box-shadow: 10px 10px 10px gray;
+      width: 180px;
+      background-color: #004466;
+      height: auto;
+      padding: 10px 0;
+      border-radius: 20px;
+      position: fixed;
+      top: 78%;
+      opacity: 0.63;
+      text-align: center;
+      left: -160px; /* hidden initially */
+      transition: left 1.5s ease, opacity 0.5s ease;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    #menuBar:hover {
+      left: 10px;
+      opacity: 1;
+    }
+    #menuBar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      transition: background-color 0.3s, color 0.3s;
+    }
+    #menuBar a:last-child {
+      border-bottom: none;
+    }
+    #menuBar a:hover {
+      background-color: yellow;
+      color: #004466;
+    }
+    section {
+      width: 60%;
+      margin: 40px auto;
+      line-height: 1.6;
+    }
+    section h2 {
+      border-bottom: 2px solid #004466;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      color: #004466;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #004466;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div id="menuBar" aria-label="Floating menu bar">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#branches">Branches</a>
+    <a href="#policy">Policy</a>
+    
+  </div>
+</nav>
+
+<a name="top"></a>
+
+<header>
+  <img src="images/r1.jpg" alt="Header Image">
+  <ol>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#branches">Branches</a></li>
+    <li><a href="#policy">Policy</a></li>
+  </ol>
+</header>
+
+<div id="space"></div>
+<hr/>
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+    content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum 
+    as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+  </p>
+  <a href="#top" class="back-link">&lt;Back&gt;</a>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <p>
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+    content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum 
+    as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+  </p>
+  <a href="#top" class="back-link">&lt;Back&gt;</a>
+</section>
+
+<section id="branches">
+  <h2>Branches</h2>
+  <p>
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+    content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum 
+    as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+  </p>
+  <a href="#top" class="back-link">&lt;Back&gt;</a>
+</section>
+
+<section id="policy">
+  <h2>Policy</h2>
+  <p>
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
+    content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum 
+    as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+  </p>
+  <a href="#top" class="back-link">&lt;Back&gt;</a>
+</section>
+
+</body>
+</html>
