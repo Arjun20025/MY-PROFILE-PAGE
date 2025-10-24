@@ -2,15 +2,16 @@
 
 <html>
 <head>
-<title>HTML JAVA</title>
+<title>HTML JavaScript</title>
 <header>
-My Web Work
+HTML & JavaScript
 </header>
  </head>
 <style>
 body
 {
 margin:1px;
+background-color: beige;
 }
 
 header
@@ -34,13 +35,32 @@ border-radius:20px;
 
 #menu
 {
-background:linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+        background-color: white;
+/* background:linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%); */
 width:15%;
 padding:10px;
 margin-left:30px;
 margin-top:30px;
 color:white;
 box-shadow:10px 10px 10px gray;
+border-radius: 20px;
+}
+
+ #leftSideMenubar
+{
+        background-color: white;
+/* background:linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%); */
+width:15%;
+padding:10px;
+margin-left:30px;
+margin-top:30px;
+color:white;
+box-shadow:10px 10px 10px gray;
+border-radius: 20px;
+}
+
+#leftSideMenubar a:hover {
+        color: red;
 }
 
 #menu ol li
@@ -48,38 +68,23 @@ box-shadow:10px 10px 10px gray;
 list-style:none;
 padding:4px;
 cursor:pointer;
+}
+
 #menu a:hover{
-        color: yellow;}
+        color: red;
 }
 
- #right side menubar
-{
-background:linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-width:15%;
-padding:10px;
-margin-left:30px;
-margin-top:30px;
-color:white;
-box-shadow:10px 10px 10px gray;
+section {
+        display: flex;
+        justify-content: center;
 }
-
-#menu ol li
-{
-list-style:none;
-padding:4px;
-cursor:pointer;
-#menu a:hover{
-        color: yellow;}
-}
-
 </style>
 
 
 <body>
 
-
-
-<div id="menu">
+<section>
+     <div id="menu">
 
 <ol>
 <a href="photogallery.html">
@@ -129,7 +134,7 @@ cursor:pointer;
 </a>
 </div>
 
- <div id="right side menubar">
+ <div id="leftSideMenubar">
 
 <ol>
 <a href="java.html">
@@ -142,6 +147,8 @@ cursor:pointer;
 
 
 </div>
+   
+</section>        
 
 </body>
 
