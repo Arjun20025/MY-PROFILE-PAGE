@@ -35,12 +35,12 @@
         var my = 0
         function showadd()
         {
-            add.styleleft = mx-100+"px"
+            add.style.left = mx-100+"px"
             add.style.top = my-100+"px"
             s.play()
             document.body.style.background="black"
 
-            document.body.appendchild(add)
+            document.body.appendChild(add)
         }
             add.oneclick= function()
             {
@@ -48,9 +48,9 @@
                 location.href="http://amazon.in"
             
             }
-            add.innerHTML="<button oneclick = 'closeadd()' style='margin-left:250px;margin-top:10button> <h1 Big Sale on Amazon</h1>"
+            add.innerHTML="<button onclick = 'closeadd()' style='margin-left:250px;margin-top:10 button> <h1> Big Sale on Amazon</h1>"
             add.innerHTML+="<hr color='green' size='4'/>"
-            add.innerHTML+="<img src= images/gif.gif>"
+            add.innerHTML+="<img src='images/gif.gif'>"
 
             function closeadd()
             {
@@ -59,8 +59,8 @@
             }
 
 
-            setTimout("showadd()",5000)
-            setTimout("closeadd()",10000)
+            setTimeout("showadd()",5000)
+            setTimeout("closeadd()",10000)
 
             function f1(event)
             {
